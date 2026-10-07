@@ -549,15 +549,18 @@ main > section[aria-labelledby="projects"] {
 }
 
 .section-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 20px;
+  display: block;
   margin-bottom: 20px;
 }
 
 .section-title h2 {
   margin: 0;
+}
+
+.section-title p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .section-title span {
@@ -751,6 +754,7 @@ main > section[aria-labelledby="projects"] {
 <h1 id="projects">
       Project Portfolio
      </h1>
+<p>Click a project below to view more details.</p>
 </div>
 <div class="project-grid">
 <article>
