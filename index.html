@@ -115,6 +115,49 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
+.progress-banner {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--button);
+  color: #ffffff;
+}
+
+.progress-banner-inner {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 12px 22px;
+  text-align: center;
+}
+
+.progress-banner h2,
+.progress-banner p {
+  margin: 0;
+}
+
+.progress-banner h2 {
+  font-size: 15px;
+}
+
+.progress-banner p {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.progress-banner a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.progress-banner a:hover {
+  color: #e4ebdf;
+}
+
 header {
   padding: clamp(30px, 4vw, 54px) clamp(24px, 4vw, 52px);
   background: linear-gradient(135deg, var(--sage) 0%, var(--sage-strong) 100%);
@@ -702,6 +745,12 @@ main > section[aria-labelledby="projects"] {
 </style>
 </head>
 <body>
+<aside class="progress-banner" aria-labelledby="progress-banner-title">
+<div class="progress-banner-inner">
+<h2 id="progress-banner-title">Portfolio In Progress</h2>
+<p>I’m adding projects and refining this site. Feel free to <a href="#projects">explore my current work</a> and <a href="resume.html">view my resume!</a></p>
+</div>
+</aside>
 <main>
 <nav aria-label="Main navigation">
 <span class="mark">
@@ -739,7 +788,7 @@ main > section[aria-labelledby="projects"] {
 </header>
 <div class="hero-intro">
 <p class="hero-summary">
-      A problem solver working with data and technology to optimize reporting, build useful dashboards, and support business decisions.
+      A problem solver using data and technology to optimize reporting, build useful dashboards, and support business decisions.
      </p>
 <p class="subtitle">
       Business Analytics &amp; MIS · University of Delaware
@@ -891,7 +940,7 @@ main > section[aria-labelledby="projects"] {
       A Little About Me
      </h2>
 <p>
-      I’m a honors senior at the University of Delaware. My experiences include data analytics at the WebstaurantStore, athletics financial reporting, and database management at PELSA.
+      I’m an honors senior at the University of Delaware. My experiences include data analytics at the WebstaurantStore, athletics financial reporting, and database management at PELSA.
      </p>
 <a class="project-link" href="resume.html">
       View my experience →
